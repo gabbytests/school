@@ -331,21 +331,26 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     }
 
     /* Mobile Menu */
-    .menu-toggle {
-        display: none;
-        font-size: 18px; /* Smaller icon */
-        background: none;
-        color: black; /* Black text */
-        border: none;
-        cursor: pointer;
-    }
+	.menu-toggle {
+    display: none;
+    font-size: 30px; /* Larger icon */
+    background: none;
+    color: black; /* Black text */
+    border: none;
+    cursor: pointer;
+    height: 100%; /* Make the icon fill the height of the header */
+    width: auto; /* Adjust the width to maintain proportions */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the icon vertically and horizontally */
+}
 
-	.mobile-menu {
+.mobile-menu {
     position: fixed;
     top: 0;
     right: -180px; /* Start with the menu hidden off-screen */
     width: 180px;
-    height: 25vh;
+    height: 31vh;
     background: white; /* White background */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
     display: flex;
@@ -359,7 +364,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     color: black; /* Black text for links */
     text-decoration: none;
     padding: 8px 12px; /* Smaller padding */
-    font-size: 14px; /* Smaller text */
+    font-size: 25px; /* Smaller text */
     display: block;
     border-bottom: 1px solid #eee;
     transition: 0.3s;
